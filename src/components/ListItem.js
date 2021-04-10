@@ -4,7 +4,7 @@ import './ListItem.css'
 function ListItem({createdAt,name,avatar}) {
     const date=new Date(createdAt).toString();
     return (
-        <div className=' video-item item'>
+        <div className=' list-item item'>
             <img className='ui image' src={process.env.PUBLIC_URL+'./avatar.jpg'} alt={`img-id:${name}`}></img>
             <div className='content'>
             <h3>{name}</h3>
